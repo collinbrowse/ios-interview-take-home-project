@@ -1,0 +1,1103 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E6344F630AC91D7D3282951 /* Pods_Cognition_Bootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */; };
+		6F4895975215632E08A90262 /* Pods_Cognition_BootcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */; };
+		891A58C2252F4E4E00B0016B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58C1252F4E4E00B0016B /* AppDelegate.swift */; };
+		891A58C6252F4E4E00B0016B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58C5252F4E4E00B0016B /* ViewController.swift */; };
+		891A58C9252F4E4E00B0016B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A58C7252F4E4E00B0016B /* Main.storyboard */; };
+		891A58CB252F4E5000B0016B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891A58CA252F4E5000B0016B /* Assets.xcassets */; };
+		891A58CE252F4E5000B0016B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A58CC252F4E5000B0016B /* LaunchScreen.storyboard */; };
+		891A58D9252F4E5000B0016B /* Cognition_BootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58D8252F4E5000B0016B /* Cognition_BootcampTests.swift */; };
+		891A58E4252F4E5000B0016B /* Cognition_BootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58E3252F4E5000B0016B /* Cognition_BootcampUITests.swift */; };
+		891A58F6252F4E9D00B0016B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891A58F5252F4E9D00B0016B /* Colors.xcassets */; };
+		8950D2BE252F5DB5008AD88E /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5902252F506700B0016B /* AppUtility.swift */; };
+		8950D2C2252F5DB7008AD88E /* AxonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A5900252F4FB500B0016B /* AxonExtensions.swift */; };
+		8950D2C6252F5DBA008AD88E /* ViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58FB252F4F8600B0016B /* ViewX.swift */; };
+		8950D2CA252F5DBC008AD88E /* ButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58FC252F4F8900B0016B /* ButtonX.swift */; };
+		8950D2CE252F5DBE008AD88E /* ImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58FD252F4F8C00B0016B /* ImageViewX.swift */; };
+		8950D38025309896008AD88E /* BaseKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8950D37F25309896008AD88E /* BaseKeyboardViewController.swift */; };
+		BE4B9DBE273F658B0073B984 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B9DBD273F658B0073B984 /* Double+Ext.swift */; };
+		BE6AA727273C52A9005D002F /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6AA726273C52A9005D002F /* LeaderboardTableViewCell.swift */; };
+		BE6D498C273B4B3F001770F9 /* CompletionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D498B273B4B3F001770F9 /* CompletionModalViewController.swift */; };
+		BE6D49A0273C4498001770F9 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D498E273C4498001770F9 /* Montserrat-Bold.ttf */; };
+		BE6D49A1273C4498001770F9 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D498F273C4498001770F9 /* Montserrat-LightItalic.ttf */; };
+		BE6D49A2273C4498001770F9 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4990273C4498001770F9 /* Montserrat-ExtraBold.ttf */; };
+		BE6D49A3273C4498001770F9 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4991273C4498001770F9 /* Montserrat-SemiBold.ttf */; };
+		BE6D49A4273C4498001770F9 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4992273C4498001770F9 /* Montserrat-SemiBoldItalic.ttf */; };
+		BE6D49A5273C4498001770F9 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4993273C4498001770F9 /* Montserrat-Black.ttf */; };
+		BE6D49A6273C4498001770F9 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4994273C4498001770F9 /* Montserrat-Thin.ttf */; };
+		BE6D49A7273C4498001770F9 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4995273C4498001770F9 /* Montserrat-ExtraBoldItalic.ttf */; };
+		BE6D49A8273C4498001770F9 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4996273C4498001770F9 /* Montserrat-ExtraLightItalic.ttf */; };
+		BE6D49A9273C4498001770F9 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4997273C4498001770F9 /* Montserrat-Regular.ttf */; };
+		BE6D49AA273C4498001770F9 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4998273C4498001770F9 /* Montserrat-BoldItalic.ttf */; };
+		BE6D49AB273C4498001770F9 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D4999273C4498001770F9 /* Montserrat-MediumItalic.ttf */; };
+		BE6D49AC273C4498001770F9 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499A273C4498001770F9 /* Montserrat-ThinItalic.ttf */; };
+		BE6D49AD273C4498001770F9 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499B273C4498001770F9 /* Montserrat-BlackItalic.ttf */; };
+		BE6D49AE273C4498001770F9 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499C273C4498001770F9 /* Montserrat-Italic.ttf */; };
+		BE6D49AF273C4498001770F9 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499D273C4498001770F9 /* Montserrat-Medium.ttf */; };
+		BE6D49B0273C4498001770F9 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499E273C4498001770F9 /* Montserrat-Light.ttf */; };
+		BE6D49B1273C4498001770F9 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE6D499F273C4498001770F9 /* Montserrat-ExtraLight.ttf */; };
+		BE6D49B5273C5024001770F9 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D49B4273C5024001770F9 /* LeaderboardViewController.swift */; };
+		BEB0A54D273F564200E1CB5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB0A54C273F564200E1CB5A /* GoogleService-Info.plist */; };
+		BEC85359274073B400FE0234 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC85358274073B400FE0234 /* String+Ext.swift */; };
+		BECA6F4C273C7F6300C78E72 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F4B273C7F6300C78E72 /* UIButton+Ext.swift */; };
+		BECA6F4F273C8CF100C78E72 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F4E273C8CF100C78E72 /* NetworkManager.swift */; };
+		BECA6F51273C8EF800C78E72 /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F50273C8EF800C78E72 /* UserScore.swift */; };
+		BECA6F53273C95F200C78E72 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F52273C95F200C78E72 /* UIImageView+Ext.swift */; };
+		FF51F46E70D7C0AF15442D6B /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		891A58D5252F4E5000B0016B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 891A58B6252F4E4E00B0016B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891A58BD252F4E4E00B0016B;
+			remoteInfo = "Cognition Bootcamp";
+		};
+		891A58E0252F4E5000B0016B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 891A58B6252F4E4E00B0016B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891A58BD252F4E4E00B0016B;
+			remoteInfo = "Cognition Bootcamp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.debug.xcconfig"; sourceTree = "<group>"; };
+		5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.release.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.release.xcconfig"; sourceTree = "<group>"; };
+		67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.release.xcconfig"; sourceTree = "<group>"; };
+		75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891A58BE252F4E4E00B0016B /* Cognition Bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cognition Bootcamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		891A58C1252F4E4E00B0016B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		891A58C5252F4E4E00B0016B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		891A58C8252F4E4E00B0016B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		891A58CA252F4E5000B0016B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		891A58CD252F4E5000B0016B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		891A58CF252F4E5000B0016B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891A58D4252F4E5000B0016B /* Cognition BootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognition BootcampTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		891A58D8252F4E5000B0016B /* Cognition_BootcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognition_BootcampTests.swift; sourceTree = "<group>"; };
+		891A58DA252F4E5000B0016B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891A58DF252F4E5000B0016B /* Cognition BootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognition BootcampUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		891A58E3252F4E5000B0016B /* Cognition_BootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognition_BootcampUITests.swift; sourceTree = "<group>"; };
+		891A58E5252F4E5000B0016B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891A58F5252F4E9D00B0016B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		891A58FB252F4F8600B0016B /* ViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewX.swift; sourceTree = "<group>"; };
+		891A58FC252F4F8900B0016B /* ButtonX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonX.swift; sourceTree = "<group>"; };
+		891A58FD252F4F8C00B0016B /* ImageViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewX.swift; sourceTree = "<group>"; };
+		891A5900252F4FB500B0016B /* AxonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxonExtensions.swift; sourceTree = "<group>"; };
+		891A5902252F506700B0016B /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		8950D37F25309896008AD88E /* BaseKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeyboardViewController.swift; sourceTree = "<group>"; };
+		BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4B9DBD273F658B0073B984 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		BE6AA726273C52A9005D002F /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		BE6D498B273B4B3F001770F9 /* CompletionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionModalViewController.swift; sourceTree = "<group>"; };
+		BE6D498E273C4498001770F9 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		BE6D498F273C4498001770F9 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		BE6D4990273C4498001770F9 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BE6D4991273C4498001770F9 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		BE6D4992273C4498001770F9 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BE6D4993273C4498001770F9 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		BE6D4994273C4498001770F9 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		BE6D4995273C4498001770F9 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BE6D4996273C4498001770F9 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BE6D4997273C4498001770F9 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		BE6D4998273C4498001770F9 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BE6D4999273C4498001770F9 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BE6D499A273C4498001770F9 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BE6D499B273C4498001770F9 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BE6D499C273C4498001770F9 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		BE6D499D273C4498001770F9 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		BE6D499E273C4498001770F9 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		BE6D499F273C4498001770F9 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BE6D49B4273C5024001770F9 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		BEB0A54C273F564200E1CB5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEC85358274073B400FE0234 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		BECA6F4B273C7F6300C78E72 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		BECA6F4E273C8CF100C78E72 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BECA6F50273C8EF800C78E72 /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserScore.swift; path = "Cognition Bootcamp/Manager/UserScore.swift"; sourceTree = SOURCE_ROOT; };
+		BECA6F52273C95F200C78E72 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_BootcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		891A58BB252F4E4E00B0016B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6344F630AC91D7D3282951 /* Pods_Cognition_Bootcamp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58D1252F4E5000B0016B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4895975215632E08A90262 /* Pods_Cognition_BootcampTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58DC252F4E5000B0016B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF51F46E70D7C0AF15442D6B /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		318AF85D7F41B921ABFDE88A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */,
+				75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */,
+				C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		891A58B5252F4E4E00B0016B = {
+			isa = PBXGroup;
+			children = (
+				891A58C0252F4E4E00B0016B /* Cognition Bootcamp */,
+				891A58D7252F4E5000B0016B /* Cognition BootcampTests */,
+				891A58E2252F4E5000B0016B /* Cognition BootcampUITests */,
+				891A58BF252F4E4E00B0016B /* Products */,
+				D858A7D12E81DBC352412C6E /* Pods */,
+				318AF85D7F41B921ABFDE88A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		891A58BF252F4E4E00B0016B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				891A58BE252F4E4E00B0016B /* Cognition Bootcamp.app */,
+				891A58D4252F4E5000B0016B /* Cognition BootcampTests.xctest */,
+				891A58DF252F4E5000B0016B /* Cognition BootcampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		891A58C0252F4E4E00B0016B /* Cognition Bootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				BECA6F4D273C8CE400C78E72 /* Manager */,
+				BE6AA725273C5294005D002F /* Cells */,
+				891A5901252F506000B0016B /* Tools */,
+				891A58FF252F4FAC00B0016B /* Extensions */,
+				891A58FA252F4F6F00B0016B /* Views */,
+				891A58F4252F4E8300B0016B /* Assets */,
+				891A5905252F509300B0016B /* Models */,
+				891A5903252F506E00B0016B /* Controllers */,
+				891A5904252F507A00B0016B /* Storyboards */,
+				891A58C1252F4E4E00B0016B /* AppDelegate.swift */,
+				891A58CF252F4E5000B0016B /* Info.plist */,
+				BEB0A54C273F564200E1CB5A /* GoogleService-Info.plist */,
+			);
+			path = "Cognition Bootcamp";
+			sourceTree = "<group>";
+		};
+		891A58D7252F4E5000B0016B /* Cognition BootcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				891A58D8252F4E5000B0016B /* Cognition_BootcampTests.swift */,
+				891A58DA252F4E5000B0016B /* Info.plist */,
+			);
+			path = "Cognition BootcampTests";
+			sourceTree = "<group>";
+		};
+		891A58E2252F4E5000B0016B /* Cognition BootcampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				891A58E3252F4E5000B0016B /* Cognition_BootcampUITests.swift */,
+				891A58E5252F4E5000B0016B /* Info.plist */,
+			);
+			path = "Cognition BootcampUITests";
+			sourceTree = "<group>";
+		};
+		891A58F4252F4E8300B0016B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				891A5906252F50A700B0016B /* Fonts */,
+				891A58CA252F4E5000B0016B /* Assets.xcassets */,
+				891A58F5252F4E9D00B0016B /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		891A58FA252F4F6F00B0016B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				891A58FB252F4F8600B0016B /* ViewX.swift */,
+				891A58FC252F4F8900B0016B /* ButtonX.swift */,
+				891A58FD252F4F8C00B0016B /* ImageViewX.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		891A58FF252F4FAC00B0016B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				891A5900252F4FB500B0016B /* AxonExtensions.swift */,
+				BECA6F4B273C7F6300C78E72 /* UIButton+Ext.swift */,
+				BECA6F52273C95F200C78E72 /* UIImageView+Ext.swift */,
+				BE4B9DBD273F658B0073B984 /* Double+Ext.swift */,
+				BEC85358274073B400FE0234 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		891A5901252F506000B0016B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				891A5902252F506700B0016B /* AppUtility.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		891A5903252F506E00B0016B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8950D37F25309896008AD88E /* BaseKeyboardViewController.swift */,
+				891A58C5252F4E4E00B0016B /* ViewController.swift */,
+				BE6D498B273B4B3F001770F9 /* CompletionModalViewController.swift */,
+				BE6D49B4273C5024001770F9 /* LeaderboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		891A5904252F507A00B0016B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				891A58C7252F4E4E00B0016B /* Main.storyboard */,
+				891A58CC252F4E5000B0016B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		891A5905252F509300B0016B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BECA6F50273C8EF800C78E72 /* UserScore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		891A5906252F50A700B0016B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D498D273C447B001770F9 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BE6AA725273C5294005D002F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE6AA726273C52A9005D002F /* LeaderboardTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BE6D498D273C447B001770F9 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D4993273C4498001770F9 /* Montserrat-Black.ttf */,
+				BE6D499B273C4498001770F9 /* Montserrat-BlackItalic.ttf */,
+				BE6D498E273C4498001770F9 /* Montserrat-Bold.ttf */,
+				BE6D4998273C4498001770F9 /* Montserrat-BoldItalic.ttf */,
+				BE6D4990273C4498001770F9 /* Montserrat-ExtraBold.ttf */,
+				BE6D4995273C4498001770F9 /* Montserrat-ExtraBoldItalic.ttf */,
+				BE6D499F273C4498001770F9 /* Montserrat-ExtraLight.ttf */,
+				BE6D4996273C4498001770F9 /* Montserrat-ExtraLightItalic.ttf */,
+				BE6D499C273C4498001770F9 /* Montserrat-Italic.ttf */,
+				BE6D499E273C4498001770F9 /* Montserrat-Light.ttf */,
+				BE6D498F273C4498001770F9 /* Montserrat-LightItalic.ttf */,
+				BE6D499D273C4498001770F9 /* Montserrat-Medium.ttf */,
+				BE6D4999273C4498001770F9 /* Montserrat-MediumItalic.ttf */,
+				BE6D4997273C4498001770F9 /* Montserrat-Regular.ttf */,
+				BE6D4991273C4498001770F9 /* Montserrat-SemiBold.ttf */,
+				BE6D4992273C4498001770F9 /* Montserrat-SemiBoldItalic.ttf */,
+				BE6D4994273C4498001770F9 /* Montserrat-Thin.ttf */,
+				BE6D499A273C4498001770F9 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		BECA6F4D273C8CE400C78E72 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BECA6F4E273C8CF100C78E72 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D858A7D12E81DBC352412C6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */,
+				67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */,
+				BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */,
+				0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */,
+				DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */,
+				5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		891A58BD252F4E4E00B0016B /* Cognition Bootcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891A58E8252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition Bootcamp" */;
+			buildPhases = (
+				E93C8B872C3F3249523515BE /* [CP] Check Pods Manifest.lock */,
+				891A58BA252F4E4E00B0016B /* Sources */,
+				891A58BB252F4E4E00B0016B /* Frameworks */,
+				891A58BC252F4E4E00B0016B /* Resources */,
+				A703965A06B47268D0F5598E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cognition Bootcamp";
+			productName = "Cognition Bootcamp";
+			productReference = 891A58BE252F4E4E00B0016B /* Cognition Bootcamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		891A58D3252F4E5000B0016B /* Cognition BootcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891A58EB252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampTests" */;
+			buildPhases = (
+				A44370A98F650DCEACEC2DC7 /* [CP] Check Pods Manifest.lock */,
+				891A58D0252F4E5000B0016B /* Sources */,
+				891A58D1252F4E5000B0016B /* Frameworks */,
+				891A58D2252F4E5000B0016B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				891A58D6252F4E5000B0016B /* PBXTargetDependency */,
+			);
+			name = "Cognition BootcampTests";
+			productName = "Cognition BootcampTests";
+			productReference = 891A58D4252F4E5000B0016B /* Cognition BootcampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		891A58DE252F4E5000B0016B /* Cognition BootcampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891A58EE252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampUITests" */;
+			buildPhases = (
+				194169F758C5230DA97424C5 /* [CP] Check Pods Manifest.lock */,
+				891A58DB252F4E5000B0016B /* Sources */,
+				891A58DC252F4E5000B0016B /* Frameworks */,
+				891A58DD252F4E5000B0016B /* Resources */,
+				821D1497F54F890302D707AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				891A58E1252F4E5000B0016B /* PBXTargetDependency */,
+			);
+			name = "Cognition BootcampUITests";
+			productName = "Cognition BootcampUITests";
+			productReference = 891A58DF252F4E5000B0016B /* Cognition BootcampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		891A58B6252F4E4E00B0016B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					891A58BD252F4E4E00B0016B = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					891A58D3252F4E5000B0016B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 891A58BD252F4E4E00B0016B;
+					};
+					891A58DE252F4E5000B0016B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 891A58BD252F4E4E00B0016B;
+					};
+				};
+			};
+			buildConfigurationList = 891A58B9252F4E4E00B0016B /* Build configuration list for PBXProject "Cognition Bootcamp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 891A58B5252F4E4E00B0016B;
+			productRefGroup = 891A58BF252F4E4E00B0016B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				891A58BD252F4E4E00B0016B /* Cognition Bootcamp */,
+				891A58D3252F4E5000B0016B /* Cognition BootcampTests */,
+				891A58DE252F4E5000B0016B /* Cognition BootcampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		891A58BC252F4E4E00B0016B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891A58CE252F4E5000B0016B /* LaunchScreen.storyboard in Resources */,
+				BE6D49A1273C4498001770F9 /* Montserrat-LightItalic.ttf in Resources */,
+				891A58F6252F4E9D00B0016B /* Colors.xcassets in Resources */,
+				BE6D49A9273C4498001770F9 /* Montserrat-Regular.ttf in Resources */,
+				BE6D49A0273C4498001770F9 /* Montserrat-Bold.ttf in Resources */,
+				BE6D49B0273C4498001770F9 /* Montserrat-Light.ttf in Resources */,
+				BE6D49A2273C4498001770F9 /* Montserrat-ExtraBold.ttf in Resources */,
+				BE6D49A3273C4498001770F9 /* Montserrat-SemiBold.ttf in Resources */,
+				BE6D49AA273C4498001770F9 /* Montserrat-BoldItalic.ttf in Resources */,
+				BE6D49AB273C4498001770F9 /* Montserrat-MediumItalic.ttf in Resources */,
+				BE6D49AF273C4498001770F9 /* Montserrat-Medium.ttf in Resources */,
+				BE6D49A5273C4498001770F9 /* Montserrat-Black.ttf in Resources */,
+				891A58CB252F4E5000B0016B /* Assets.xcassets in Resources */,
+				BE6D49A4273C4498001770F9 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				BE6D49B1273C4498001770F9 /* Montserrat-ExtraLight.ttf in Resources */,
+				BE6D49A6273C4498001770F9 /* Montserrat-Thin.ttf in Resources */,
+				BE6D49AC273C4498001770F9 /* Montserrat-ThinItalic.ttf in Resources */,
+				BE6D49AE273C4498001770F9 /* Montserrat-Italic.ttf in Resources */,
+				891A58C9252F4E4E00B0016B /* Main.storyboard in Resources */,
+				BEB0A54D273F564200E1CB5A /* GoogleService-Info.plist in Resources */,
+				BE6D49A7273C4498001770F9 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				BE6D49A8273C4498001770F9 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				BE6D49AD273C4498001770F9 /* Montserrat-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58D2252F4E5000B0016B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58DD252F4E5000B0016B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		194169F758C5230DA97424C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognition Bootcamp-Cognition BootcampUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821D1497F54F890302D707AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44370A98F650DCEACEC2DC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognition BootcampTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A703965A06B47268D0F5598E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E93C8B872C3F3249523515BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognition Bootcamp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891A58BA252F4E4E00B0016B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8950D38025309896008AD88E /* BaseKeyboardViewController.swift in Sources */,
+				8950D2BE252F5DB5008AD88E /* AppUtility.swift in Sources */,
+				8950D2CE252F5DBE008AD88E /* ImageViewX.swift in Sources */,
+				891A58C6252F4E4E00B0016B /* ViewController.swift in Sources */,
+				BECA6F51273C8EF800C78E72 /* UserScore.swift in Sources */,
+				BE6D498C273B4B3F001770F9 /* CompletionModalViewController.swift in Sources */,
+				BE4B9DBE273F658B0073B984 /* Double+Ext.swift in Sources */,
+				891A58C2252F4E4E00B0016B /* AppDelegate.swift in Sources */,
+				8950D2C6252F5DBA008AD88E /* ViewX.swift in Sources */,
+				BEC85359274073B400FE0234 /* String+Ext.swift in Sources */,
+				BECA6F53273C95F200C78E72 /* UIImageView+Ext.swift in Sources */,
+				8950D2CA252F5DBC008AD88E /* ButtonX.swift in Sources */,
+				BE6D49B5273C5024001770F9 /* LeaderboardViewController.swift in Sources */,
+				BECA6F4C273C7F6300C78E72 /* UIButton+Ext.swift in Sources */,
+				BECA6F4F273C8CF100C78E72 /* NetworkManager.swift in Sources */,
+				BE6AA727273C52A9005D002F /* LeaderboardTableViewCell.swift in Sources */,
+				8950D2C2252F5DB7008AD88E /* AxonExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58D0252F4E5000B0016B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891A58D9252F4E5000B0016B /* Cognition_BootcampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891A58DB252F4E5000B0016B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891A58E4252F4E5000B0016B /* Cognition_BootcampUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891A58D6252F4E5000B0016B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 891A58BD252F4E4E00B0016B /* Cognition Bootcamp */;
+			targetProxy = 891A58D5252F4E5000B0016B /* PBXContainerItemProxy */;
+		};
+		891A58E1252F4E5000B0016B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 891A58BD252F4E4E00B0016B /* Cognition Bootcamp */;
+			targetProxy = 891A58E0252F4E5000B0016B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		891A58C7252F4E4E00B0016B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891A58C8252F4E4E00B0016B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		891A58CC252F4E5000B0016B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891A58CD252F4E5000B0016B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		891A58E6252F4E5000B0016B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Debug;
+		};
+		891A58E7252F4E5000B0016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		891A58E9252F4E5000B0016B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
+				INFOPLIST_FILE = "Cognition Bootcamp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.collinbrowse.sabootcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		891A58EA252F4E5000B0016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
+				INFOPLIST_FILE = "Cognition Bootcamp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseFirestore\"",
+					"-framework",
+					"\"FirebaseFirestoreSwift\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GTMSessionFetcher\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"absl\"",
+					"-framework",
+					"\"grpc\"",
+					"-framework",
+					"\"grpcpp\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"openssl_grpc\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.collinbrowse.sabootcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		891A58EC252F4E5000B0016B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognition BootcampTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sportsacademy.Cognition-BootcampTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognition Bootcamp.app/Cognition Bootcamp";
+			};
+			name = Debug;
+		};
+		891A58ED252F4E5000B0016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognition BootcampTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sportsacademy.Cognition-BootcampTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognition Bootcamp.app/Cognition Bootcamp";
+			};
+			name = Release;
+		};
+		891A58EF252F4E5000B0016B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognition BootcampUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sportsacademy.Cognition-BootcampUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cognition Bootcamp";
+			};
+			name = Debug;
+		};
+		891A58F0252F4E5000B0016B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognition BootcampUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sportsacademy.Cognition-BootcampUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cognition Bootcamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		891A58B9252F4E4E00B0016B /* Build configuration list for PBXProject "Cognition Bootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891A58E6252F4E5000B0016B /* Debug */,
+				891A58E7252F4E5000B0016B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		891A58E8252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition Bootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891A58E9252F4E5000B0016B /* Debug */,
+				891A58EA252F4E5000B0016B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		891A58EB252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891A58EC252F4E5000B0016B /* Debug */,
+				891A58ED252F4E5000B0016B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		891A58EE252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891A58EF252F4E5000B0016B /* Debug */,
+				891A58F0252F4E5000B0016B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 891A58B6252F4E4E00B0016B /* Project object */;
+}
