@@ -8,7 +8,9 @@
 import Foundation
 import FirebaseFirestore
 
-protocol DictionaryInitializer {
+
+/// Provide an optional initializer for a user score that can accept a dictionary
+protocol UserScoreSerializable {
     init?(dictionary: [String: Any])
 }
 
@@ -30,7 +32,7 @@ struct UserScore: Codable {
 }
 
 
-extension UserScore: DictionaryInitializer {
+extension UserScore: UserScoreSerializable {
     
     init?(dictionary: [String : Any]) {
         

@@ -11,10 +11,9 @@ import FirebaseFirestore
 
 class LeaderboardViewController: UIViewController {
     
-    var leaderboard: [UserScore] = []
-    var cellSpacing: CGFloat = 20.0
-    var newestScoreCreatedAt: Date?
-    let dateFormatter = DateFormatter()
+    private var leaderboard: [UserScore] = []
+    private var newestScoreCreatedAt: Date?
+    private let dateFormatter = DateFormatter()
     
     @IBOutlet var iconsView: UIView!
     @IBOutlet var podiumIcon: UIImageView!
@@ -35,15 +34,16 @@ class LeaderboardViewController: UIViewController {
     
     
     override func viewDidLayoutSubviews() {
+        // Set up the buttons AFTER viewDidLoad so the background gradient can be properly set
         setUpButtons()
-    }
-    
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        
     }
 
     
+    /// Calls the Network Manager to add a new score in Firestore. If successful, sets the instance variable
+    ///  newestScoreCreatedAt with the Date object of the newest created score
+    ///
+    /// - Parameters: newScore: [String: Any]
+    ///     - A dictionary that contains the information for a new score. The keys should be: initials, createdAt, totalTime, reactionTime
     public func addNewScore(_ newScore: [String : Any]) {
         NetworkManager.shared.addNewScore(newScore) { [weak self] didAddNewScore in
             guard let self = self else { return }
@@ -54,6 +54,9 @@ class LeaderboardViewController: UIViewController {
     }
     
     
+    /// Gets the Current Leaderboard
+    /// If a completion handler returns, set the instance variable leaderboard.
+    /// Then reload the tableview with the new data
     private func currentLeaderboard() {
         NetworkManager.shared.getCurrentLeaderboard { [weak self] leaderboard in
             guard let self = self else { return }
@@ -65,6 +68,7 @@ class LeaderboardViewController: UIViewController {
     }
     
     
+    /// Set the images for accessory icons
     private func setUpIcons() {
         podiumIcon.setImageColor(color: UIColor.systemGray)
         usersIcon.setImageColor(color: UIColor.systemGray)
@@ -72,16 +76,18 @@ class LeaderboardViewController: UIViewController {
     }
     
     
+    /// Add Corner Radius, Background and Border to IB Buttons: tryAgainButton, quitButton
     private func setUpButtons() {
         tryAgainButton.addVLCornerRadius()
         tryAgainButton.addGoldGradientBackground()
+        quitButton.addVLCornerRadius()
         quitButton.layer.borderColor = UIColor.gold.cgColor
         quitButton.layer.borderWidth = 1
-        quitButton.addVLCornerRadius()
     }
 }
 
 
+/// An extension to handle UITableViewDataSource and UITableViewDelegate methods
 extension LeaderboardViewController: UITableViewDataSource, UITableViewDelegate {
     
     
@@ -91,20 +97,21 @@ extension LeaderboardViewController: UITableViewDataSource, UITableViewDelegate 
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        // Only ever show the top 10 on the leaderboard
         return 10
     }
 
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
+        // Set a headerView to add spacing between cells
         let headerView = UIView()
-        
         return headerView
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // Each cell gets the positionLabel, initialsLabel, timeLabel, label colors, backgroundColor and border set
         let cell = leaderboardTableView.dequeueReusableCell(withIdentifier: LeaderboardTableViewCell.reuseID) as! LeaderboardTableViewCell
         cell.layer.borderColor = nil
         cell.backgroundColor = nil
@@ -115,7 +122,12 @@ extension LeaderboardViewController: UITableViewDataSource, UITableViewDelegate 
             cell.initialsLabel.text = "---"
             cell.timeLabel.text = "---"
             cell.backgroundColor = .clear
-            cell.layer.borderColor = UIColor.background2.cgColor
+            if traitCollection.userInterfaceStyle == .light {
+                cell.layer.borderColor = UIColor.background2.cgColor
+            } else {
+                cell.layer.borderColor = UIColor.silver.cgColor
+            }
+            cell.layer.borderWidth = 2
         } else {
             cell.positionLabel.text = "\(indexPath.section + 1)"
             cell.initialsLabel.text = leaderboard[indexPath.section].initials
@@ -127,8 +139,10 @@ extension LeaderboardViewController: UITableViewDataSource, UITableViewDelegate 
                 cell.backgroundColor = UIColor(named: "Background1Flipped")
                 cell.timeLabel.textColor = UIColor.background1
                 cell.initialsLabel.textColor = UIColor.background1
+                cell.layer.borderWidth = 2
             } else {
                 cell.backgroundColor = .background2
+                cell.layer.borderWidth = 0
                 cell.timeLabel.textColor = UIColor(named: "Background1Flipped")
                 cell.initialsLabel.textColor = UIColor(named: "Background1Flipped")
             }

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E6344F630AC91D7D3282951 /* Pods_Cognition_Bootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */; };
-		6F4895975215632E08A90262 /* Pods_Cognition_BootcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */; };
+		84C57EDFAF1D6D71A8FAC0F2 /* Pods_Cognition_BootcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBC1DDBF570A1AAE205D530 /* Pods_Cognition_BootcampTests.framework */; };
 		891A58C2252F4E4E00B0016B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58C1252F4E4E00B0016B /* AppDelegate.swift */; };
 		891A58C6252F4E4E00B0016B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58C5252F4E4E00B0016B /* ViewController.swift */; };
 		891A58C9252F4E4E00B0016B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891A58C7252F4E4E00B0016B /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		8950D2CA252F5DBC008AD88E /* ButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58FC252F4F8900B0016B /* ButtonX.swift */; };
 		8950D2CE252F5DBE008AD88E /* ImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A58FD252F4F8C00B0016B /* ImageViewX.swift */; };
 		8950D38025309896008AD88E /* BaseKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8950D37F25309896008AD88E /* BaseKeyboardViewController.swift */; };
+		940942640E7D6DBA3F34ECCF /* Pods_Cognition_Bootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB081738D1ADE4F1C97CE7D /* Pods_Cognition_Bootcamp.framework */; };
 		BE4B9DBE273F658B0073B984 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B9DBD273F658B0073B984 /* Double+Ext.swift */; };
 		BE6AA727273C52A9005D002F /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6AA726273C52A9005D002F /* LeaderboardTableViewCell.swift */; };
 		BE6D498C273B4B3F001770F9 /* CompletionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D498B273B4B3F001770F9 /* CompletionModalViewController.swift */; };
@@ -51,7 +51,7 @@
 		BECA6F4F273C8CF100C78E72 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F4E273C8CF100C78E72 /* NetworkManager.swift */; };
 		BECA6F51273C8EF800C78E72 /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F50273C8EF800C78E72 /* UserScore.swift */; };
 		BECA6F53273C95F200C78E72 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA6F52273C95F200C78E72 /* UIImageView+Ext.swift */; };
-		FF51F46E70D7C0AF15442D6B /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */; };
+		CE64DA620BB4D33C65537697 /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E484BE092C19B90DCB0629 /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,12 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.debug.xcconfig"; sourceTree = "<group>"; };
-		5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.release.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.release.xcconfig"; sourceTree = "<group>"; };
-		67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.release.xcconfig"; sourceTree = "<group>"; };
-		75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E751E56A69C91829DDB836 /* Pods-Cognition Bootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.debug.xcconfig"; sourceTree = "<group>"; };
+		331877E42EDC6C9AEE81349F /* Pods-Cognition BootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.release.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E30A81D8BBBA24A4FCDEC7D /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DBC1DDBF570A1AAE205D530 /* Pods_Cognition_BootcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_BootcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A58BE252F4E4E00B0016B /* Cognition Bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cognition Bootcamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		891A58C1252F4E4E00B0016B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		891A58C5252F4E4E00B0016B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +96,8 @@
 		891A5900252F4FB500B0016B /* AxonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxonExtensions.swift; sourceTree = "<group>"; };
 		891A5902252F506700B0016B /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		8950D37F25309896008AD88E /* BaseKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeyboardViewController.swift; sourceTree = "<group>"; };
-		BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		97E484BE092C19B90DCB0629 /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B329544B090DC41B2F7950FB /* Pods-Cognition BootcampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE4B9DBD273F658B0073B984 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		BE6AA726273C52A9005D002F /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		BE6D498B273B4B3F001770F9 /* CompletionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionModalViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +126,9 @@
 		BECA6F4E273C8CF100C78E72 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BECA6F50273C8EF800C78E72 /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserScore.swift; path = "Cognition Bootcamp/Manager/UserScore.swift"; sourceTree = SOURCE_ROOT; };
 		BECA6F52273C95F200C78E72 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
-		C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_BootcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition BootcampTests.debug.xcconfig"; path = "Target Support Files/Pods-Cognition BootcampTests/Pods-Cognition BootcampTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFB081738D1ADE4F1C97CE7D /* Pods_Cognition_Bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cognition_Bootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A2B07541849DD9C0F1F54A /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDF06DB3110908FD12746048 /* Pods-Cognition Bootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognition Bootcamp.release.xcconfig"; path = "Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E6344F630AC91D7D3282951 /* Pods_Cognition_Bootcamp.framework in Frameworks */,
+				940942640E7D6DBA3F34ECCF /* Pods_Cognition_Bootcamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4895975215632E08A90262 /* Pods_Cognition_BootcampTests.framework in Frameworks */,
+				84C57EDFAF1D6D71A8FAC0F2 /* Pods_Cognition_BootcampTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,19 +152,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF51F46E70D7C0AF15442D6B /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */,
+				CE64DA620BB4D33C65537697 /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		318AF85D7F41B921ABFDE88A /* Frameworks */ = {
+		592F61E10029CB4F4F7C8BA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F4515CD4CB717FEA801D2BE /* Pods_Cognition_Bootcamp.framework */,
-				75F3162916D255D09E4A04DF /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */,
-				C495ABE38EA650C31F60ED2D /* Pods_Cognition_BootcampTests.framework */,
+				BFB081738D1ADE4F1C97CE7D /* Pods_Cognition_Bootcamp.framework */,
+				97E484BE092C19B90DCB0629 /* Pods_Cognition_Bootcamp_Cognition_BootcampUITests.framework */,
+				7DBC1DDBF570A1AAE205D530 /* Pods_Cognition_BootcampTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				891A58E2252F4E5000B0016B /* Cognition BootcampUITests */,
 				891A58BF252F4E4E00B0016B /* Products */,
 				D858A7D12E81DBC352412C6E /* Pods */,
-				318AF85D7F41B921ABFDE88A /* Frameworks */,
+				592F61E10029CB4F4F7C8BA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,12 +348,12 @@
 		D858A7D12E81DBC352412C6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */,
-				67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */,
-				BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */,
-				0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */,
-				DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */,
-				5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */,
+				30E751E56A69C91829DDB836 /* Pods-Cognition Bootcamp.debug.xcconfig */,
+				FDF06DB3110908FD12746048 /* Pods-Cognition Bootcamp.release.xcconfig */,
+				5E30A81D8BBBA24A4FCDEC7D /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */,
+				E0A2B07541849DD9C0F1F54A /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */,
+				B329544B090DC41B2F7950FB /* Pods-Cognition BootcampTests.debug.xcconfig */,
+				331877E42EDC6C9AEE81349F /* Pods-Cognition BootcampTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -365,11 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A58E8252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition Bootcamp" */;
 			buildPhases = (
-				E93C8B872C3F3249523515BE /* [CP] Check Pods Manifest.lock */,
+				6D0E11B1DEDFAF17530C07F8 /* [CP] Check Pods Manifest.lock */,
 				891A58BA252F4E4E00B0016B /* Sources */,
 				891A58BB252F4E4E00B0016B /* Frameworks */,
 				891A58BC252F4E4E00B0016B /* Resources */,
-				A703965A06B47268D0F5598E /* [CP] Embed Pods Frameworks */,
+				49C404669602814FB6DF4777 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,7 +384,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A58EB252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampTests" */;
 			buildPhases = (
-				A44370A98F650DCEACEC2DC7 /* [CP] Check Pods Manifest.lock */,
+				CE4FBC0F3D9CC25065DA4AA0 /* [CP] Check Pods Manifest.lock */,
 				891A58D0252F4E5000B0016B /* Sources */,
 				891A58D1252F4E5000B0016B /* Frameworks */,
 				891A58D2252F4E5000B0016B /* Resources */,
@@ -403,11 +403,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891A58EE252F4E5000B0016B /* Build configuration list for PBXNativeTarget "Cognition BootcampUITests" */;
 			buildPhases = (
-				194169F758C5230DA97424C5 /* [CP] Check Pods Manifest.lock */,
+				6CF55B6DCC1270281B7CE04D /* [CP] Check Pods Manifest.lock */,
 				891A58DB252F4E5000B0016B /* Sources */,
 				891A58DC252F4E5000B0016B /* Frameworks */,
 				891A58DD252F4E5000B0016B /* Resources */,
-				821D1497F54F890302D707AC /* [CP] Embed Pods Frameworks */,
+				A5AFB51AD2B7A9426470392D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,7 +509,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		194169F758C5230DA97424C5 /* [CP] Check Pods Manifest.lock */ = {
+		49C404669602814FB6DF4777 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF55B6DCC1270281B7CE04D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -531,7 +548,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		821D1497F54F890302D707AC /* [CP] Embed Pods Frameworks */ = {
+		6D0E11B1DEDFAF17530C07F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognition Bootcamp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5AFB51AD2B7A9426470392D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -548,7 +587,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp-Cognition BootcampUITests/Pods-Cognition Bootcamp-Cognition BootcampUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A44370A98F650DCEACEC2DC7 /* [CP] Check Pods Manifest.lock */ = {
+		CE4FBC0F3D9CC25065DA4AA0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,45 +603,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Cognition BootcampTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A703965A06B47268D0F5598E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cognition Bootcamp/Pods-Cognition Bootcamp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E93C8B872C3F3249523515BE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Cognition Bootcamp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -724,6 +724,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -787,6 +788,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -809,8 +811,9 @@
 		};
 		891A58E9252F4E5000B0016B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E0F0716B5F0C3DC59C9B8AE /* Pods-Cognition Bootcamp.debug.xcconfig */;
+			baseConfigurationReference = 30E751E56A69C91829DDB836 /* Pods-Cognition Bootcamp.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -823,6 +826,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -882,7 +886,7 @@
 					"-framework",
 					"\"openssl_grpc\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.collinbrowse.sabootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabootcamp.ioscog.radiance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -892,8 +896,9 @@
 		};
 		891A58EA252F4E5000B0016B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67CE46C596DABDF191991854 /* Pods-Cognition Bootcamp.release.xcconfig */;
+			baseConfigurationReference = FDF06DB3110908FD12746048 /* Pods-Cognition Bootcamp.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -906,7 +911,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -966,7 +971,7 @@
 					"-framework",
 					"\"openssl_grpc\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.collinbrowse.sabootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabootcamp.ioscog.radiance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -976,13 +981,14 @@
 		};
 		891A58EC252F4E5000B0016B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEDB6B0113689D315EC31A2B /* Pods-Cognition BootcampTests.debug.xcconfig */;
+			baseConfigurationReference = B329544B090DC41B2F7950FB /* Pods-Cognition BootcampTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
 				INFOPLIST_FILE = "Cognition BootcampTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -998,13 +1004,14 @@
 		};
 		891A58ED252F4E5000B0016B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5043DE81BE57D627DB419A94 /* Pods-Cognition BootcampTests.release.xcconfig */;
+			baseConfigurationReference = 331877E42EDC6C9AEE81349F /* Pods-Cognition BootcampTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
 				INFOPLIST_FILE = "Cognition BootcampTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1020,10 +1027,11 @@
 		};
 		891A58EF252F4E5000B0016B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE19663B3A258239759300A1 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */;
+			baseConfigurationReference = 5E30A81D8BBBA24A4FCDEC7D /* Pods-Cognition Bootcamp-Cognition BootcampUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
 				INFOPLIST_FILE = "Cognition BootcampUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1040,10 +1048,11 @@
 		};
 		891A58F0252F4E5000B0016B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AF9CE3D0A79D379B4688170 /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */;
+			baseConfigurationReference = E0A2B07541849DD9C0F1F54A /* Pods-Cognition Bootcamp-Cognition BootcampUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84XX2W7G34;
 				INFOPLIST_FILE = "Cognition BootcampUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
